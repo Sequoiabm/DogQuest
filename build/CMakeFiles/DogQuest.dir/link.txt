@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/DogQuest.dir/main.cpp.o -o DogQuest  /opt/homebrew/lib/libsfml-graphics.dylib /opt/homebrew/lib/libsfml-window.dylib /opt/homebrew/lib/libsfml-system.dylib
