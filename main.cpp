@@ -1,45 +1,36 @@
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 int main() {
-    // Create the main window
-    sf::RenderWindow window(sf::VideoMode(sf::Vector2u(800, 600)), "DogQuest");
+    sf::RenderWindow window(sf::VideoMode({800, 600}), "DogQuest");
     window.setFramerateLimit(60);
 
-    // Create a font
     sf::Font font;
     if (!font.openFromFile("/System/Library/Fonts/Helvetica.ttc")) {
-        return -1; // Error loading font
+        std::cerr << "Error: Could not load font!\n";
+        return -1;
     }
 
-    // Create a text object
-    sf::Text welcomeText(font, "Welcome to DogQuest!", 30);
+    sf::Text welcomeText(font, "Welcome to Dog Quest!", 30);
     welcomeText.setFillColor(sf::Color::White);
-    
-    // Center the text
-    sf::FloatRect textBounds = welcomeText.getLocalBounds();
-    welcomeText.setPosition(
-        (window.getSize().x - textBounds.width) / 2,
-        (window.getSize().y - textBounds.height) / 2
-    );
 
-    // Start the game loop
+    sf::FloatRect textBounds = welcomeText.getLocalBounds();
+    welcomeText.setPosition({
+        (window.getSize().x - textBounds.size.x) / 2,
+        (window.getSize().y - textBounds.size.y) / 2 - textBounds.position.y
+    });
+
     while (window.isOpen()) {
-        // Process events
-        if (auto event = window.pollEvent()) {
-            // Close window: exit
-            if (event->is<sf::Event::Closed>())
+        if (const std::optional<sf::Event> event = window.pollEvent()) {
+            if (event->is<sf::Event::Closed>()) {
                 window.close();
+            }
         }
 
-        // Clear the window
         window.clear(sf::Color::Black);
-
-        // Draw the text
         window.draw(welcomeText);
-
-        // Display what we drew
         window.display();
     }
 
     return 0;
-} 
+}
