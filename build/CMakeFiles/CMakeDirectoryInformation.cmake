@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/Users/sequoiaboubionmckay/Desktop/DogQuest")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/sequoiaboubionmckay/desktop/DogQuest/Build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/sequoiaboubionmckay/Desktop/DogQuest/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/sequoiaboubionmckay/Desktop/DogQuest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sequoiaboubionmckay/desktop/DogQuest/Build
+CMAKE_BINARY_DIR = /Users/sequoiaboubionmckay/Desktop/DogQuest/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DogQuest.dir/depend.make
@@ -72,34 +72,52 @@ include CMakeFiles/DogQuest.dir/flags.make
 CMakeFiles/DogQuest.dir/codegen:
 .PHONY : CMakeFiles/DogQuest.dir/codegen
 
-CMakeFiles/DogQuest.dir/main.cpp.o: CMakeFiles/DogQuest.dir/flags.make
-CMakeFiles/DogQuest.dir/main.cpp.o: /Users/sequoiaboubionmckay/Desktop/DogQuest/main.cpp
-CMakeFiles/DogQuest.dir/main.cpp.o: CMakeFiles/DogQuest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sequoiaboubionmckay/desktop/DogQuest/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DogQuest.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DogQuest.dir/main.cpp.o -MF CMakeFiles/DogQuest.dir/main.cpp.o.d -o CMakeFiles/DogQuest.dir/main.cpp.o -c /Users/sequoiaboubionmckay/Desktop/DogQuest/main.cpp
+CMakeFiles/DogQuest.dir/src/main.cpp.o: CMakeFiles/DogQuest.dir/flags.make
+CMakeFiles/DogQuest.dir/src/main.cpp.o: /Users/sequoiaboubionmckay/Desktop/DogQuest/src/main.cpp
+CMakeFiles/DogQuest.dir/src/main.cpp.o: CMakeFiles/DogQuest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sequoiaboubionmckay/Desktop/DogQuest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DogQuest.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DogQuest.dir/src/main.cpp.o -MF CMakeFiles/DogQuest.dir/src/main.cpp.o.d -o CMakeFiles/DogQuest.dir/src/main.cpp.o -c /Users/sequoiaboubionmckay/Desktop/DogQuest/src/main.cpp
 
-CMakeFiles/DogQuest.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DogQuest.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sequoiaboubionmckay/Desktop/DogQuest/main.cpp > CMakeFiles/DogQuest.dir/main.cpp.i
+CMakeFiles/DogQuest.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DogQuest.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sequoiaboubionmckay/Desktop/DogQuest/src/main.cpp > CMakeFiles/DogQuest.dir/src/main.cpp.i
 
-CMakeFiles/DogQuest.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DogQuest.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sequoiaboubionmckay/Desktop/DogQuest/main.cpp -o CMakeFiles/DogQuest.dir/main.cpp.s
+CMakeFiles/DogQuest.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DogQuest.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sequoiaboubionmckay/Desktop/DogQuest/src/main.cpp -o CMakeFiles/DogQuest.dir/src/main.cpp.s
+
+CMakeFiles/DogQuest.dir/src/button.cpp.o: CMakeFiles/DogQuest.dir/flags.make
+CMakeFiles/DogQuest.dir/src/button.cpp.o: /Users/sequoiaboubionmckay/Desktop/DogQuest/src/button.cpp
+CMakeFiles/DogQuest.dir/src/button.cpp.o: CMakeFiles/DogQuest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sequoiaboubionmckay/Desktop/DogQuest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DogQuest.dir/src/button.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DogQuest.dir/src/button.cpp.o -MF CMakeFiles/DogQuest.dir/src/button.cpp.o.d -o CMakeFiles/DogQuest.dir/src/button.cpp.o -c /Users/sequoiaboubionmckay/Desktop/DogQuest/src/button.cpp
+
+CMakeFiles/DogQuest.dir/src/button.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DogQuest.dir/src/button.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sequoiaboubionmckay/Desktop/DogQuest/src/button.cpp > CMakeFiles/DogQuest.dir/src/button.cpp.i
+
+CMakeFiles/DogQuest.dir/src/button.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DogQuest.dir/src/button.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sequoiaboubionmckay/Desktop/DogQuest/src/button.cpp -o CMakeFiles/DogQuest.dir/src/button.cpp.s
 
 # Object files for target DogQuest
 DogQuest_OBJECTS = \
-"CMakeFiles/DogQuest.dir/main.cpp.o"
+"CMakeFiles/DogQuest.dir/src/main.cpp.o" \
+"CMakeFiles/DogQuest.dir/src/button.cpp.o"
 
 # External object files for target DogQuest
 DogQuest_EXTERNAL_OBJECTS =
 
-DogQuest: CMakeFiles/DogQuest.dir/main.cpp.o
+DogQuest: CMakeFiles/DogQuest.dir/src/main.cpp.o
+DogQuest: CMakeFiles/DogQuest.dir/src/button.cpp.o
 DogQuest: CMakeFiles/DogQuest.dir/build.make
 DogQuest: /opt/homebrew/lib/libsfml-graphics.dylib
 DogQuest: /opt/homebrew/lib/libsfml-window.dylib
 DogQuest: /opt/homebrew/lib/libsfml-system.dylib
+DogQuest: /opt/homebrew/lib/libsfml-audio.dylib
+DogQuest: /opt/homebrew/lib/libsfml-network.dylib
 DogQuest: CMakeFiles/DogQuest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/sequoiaboubionmckay/desktop/DogQuest/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable DogQuest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/sequoiaboubionmckay/Desktop/DogQuest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DogQuest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DogQuest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -111,6 +129,6 @@ CMakeFiles/DogQuest.dir/clean:
 .PHONY : CMakeFiles/DogQuest.dir/clean
 
 CMakeFiles/DogQuest.dir/depend:
-	cd /Users/sequoiaboubionmckay/desktop/DogQuest/Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sequoiaboubionmckay/Desktop/DogQuest /Users/sequoiaboubionmckay/Desktop/DogQuest /Users/sequoiaboubionmckay/desktop/DogQuest/Build /Users/sequoiaboubionmckay/desktop/DogQuest/Build /Users/sequoiaboubionmckay/desktop/DogQuest/Build/CMakeFiles/DogQuest.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/sequoiaboubionmckay/Desktop/DogQuest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sequoiaboubionmckay/Desktop/DogQuest /Users/sequoiaboubionmckay/Desktop/DogQuest /Users/sequoiaboubionmckay/Desktop/DogQuest/build /Users/sequoiaboubionmckay/Desktop/DogQuest/build /Users/sequoiaboubionmckay/Desktop/DogQuest/build/CMakeFiles/DogQuest.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/DogQuest.dir/depend
 

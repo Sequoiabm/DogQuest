@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/sequoiaboubionmckay/Desktop/DogQuest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sequoiaboubionmckay/desktop/DogQuest/Build
+CMAKE_BINARY_DIR = /Users/sequoiaboubionmckay/Desktop/DogQuest/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sequoiaboubionmckay/desktop/DogQuest/Build/CMakeFiles /Users/sequoiaboubionmckay/desktop/DogQuest/Build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sequoiaboubionmckay/Desktop/DogQuest/build/CMakeFiles /Users/sequoiaboubionmckay/Desktop/DogQuest/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sequoiaboubionmckay/desktop/DogQuest/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sequoiaboubionmckay/Desktop/DogQuest/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,53 @@ DogQuest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/build
 .PHONY : DogQuest/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/button.o: src/button.cpp.o
+.PHONY : src/button.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/button.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/src/button.cpp.o
+.PHONY : src/button.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/button.i: src/button.cpp.i
+.PHONY : src/button.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/src/button.cpp.i
+.PHONY : src/button.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/button.s: src/button.cpp.s
+.PHONY : src/button.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/src/button.cpp.s
+.PHONY : src/button.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DogQuest"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/button.o"
+	@echo "... src/button.i"
+	@echo "... src/button.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

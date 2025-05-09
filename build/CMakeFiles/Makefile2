@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/sequoiaboubionmckay/Desktop/DogQuest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sequoiaboubionmckay/desktop/DogQuest/Build
+CMAKE_BINARY_DIR = /Users/sequoiaboubionmckay/Desktop/DogQuest/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/DogQuest.dir/clean
 CMakeFiles/DogQuest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/sequoiaboubionmckay/desktop/DogQuest/Build/CMakeFiles --progress-num=1,2 "Built target DogQuest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/sequoiaboubionmckay/Desktop/DogQuest/build/CMakeFiles --progress-num=1,2,3 "Built target DogQuest"
 .PHONY : CMakeFiles/DogQuest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DogQuest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sequoiaboubionmckay/desktop/DogQuest/Build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sequoiaboubionmckay/Desktop/DogQuest/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DogQuest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sequoiaboubionmckay/desktop/DogQuest/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sequoiaboubionmckay/Desktop/DogQuest/build/CMakeFiles 0
 .PHONY : CMakeFiles/DogQuest.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ DogQuest: CMakeFiles/DogQuest.dir/rule
 # codegen rule for target.
 CMakeFiles/DogQuest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/sequoiaboubionmckay/desktop/DogQuest/Build/CMakeFiles --progress-num=1,2 "Finished codegen for target DogQuest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/sequoiaboubionmckay/Desktop/DogQuest/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target DogQuest"
 .PHONY : CMakeFiles/DogQuest.dir/codegen
 
 # clean rule for target.

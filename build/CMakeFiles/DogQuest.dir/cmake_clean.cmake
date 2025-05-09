@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DogQuest.dir/main.cpp.o"
-  "CMakeFiles/DogQuest.dir/main.cpp.o.d"
+  "CMakeFiles/DogQuest.dir/src/button.cpp.o"
+  "CMakeFiles/DogQuest.dir/src/button.cpp.o.d"
+  "CMakeFiles/DogQuest.dir/src/main.cpp.o"
+  "CMakeFiles/DogQuest.dir/src/main.cpp.o.d"
   "DogQuest"
   "DogQuest.pdb"
 )

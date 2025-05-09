@@ -4,9 +4,9 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/homebrew/include
+CXX_INCLUDES = -I/Users/sequoiaboubionmckay/Desktop/DogQuest/headerFiles -I/opt/homebrew/include
 
-CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
+CXX_FLAGSarm64 = -std=gnu++20 -arch arm64
 
-CXX_FLAGS = -std=gnu++17 -arch arm64
+CXX_FLAGS = -std=gnu++20 -arch arm64
 
