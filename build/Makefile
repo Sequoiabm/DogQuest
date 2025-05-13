@@ -129,6 +129,30 @@ DogQuest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/build
 .PHONY : DogQuest/fast
 
+src/Player.o: src/Player.cpp.o
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DogQuest.dir/build.make CMakeFiles/DogQuest.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
 src/button.o: src/button.cpp.o
 .PHONY : src/button.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DogQuest"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
 	@echo "... src/button.o"
 	@echo "... src/button.i"
 	@echo "... src/button.s"

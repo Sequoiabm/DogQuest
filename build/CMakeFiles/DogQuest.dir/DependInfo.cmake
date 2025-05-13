@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/sequoiaboubionmckay/Desktop/DogQuest/src/Player.cpp" "CMakeFiles/DogQuest.dir/src/Player.cpp.o" "gcc" "CMakeFiles/DogQuest.dir/src/Player.cpp.o.d"
   "/Users/sequoiaboubionmckay/Desktop/DogQuest/src/button.cpp" "CMakeFiles/DogQuest.dir/src/button.cpp.o" "gcc" "CMakeFiles/DogQuest.dir/src/button.cpp.o.d"
   "/Users/sequoiaboubionmckay/Desktop/DogQuest/src/main.cpp" "CMakeFiles/DogQuest.dir/src/main.cpp.o" "gcc" "CMakeFiles/DogQuest.dir/src/main.cpp.o.d"
   )

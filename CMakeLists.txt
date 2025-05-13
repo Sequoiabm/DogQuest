@@ -5,7 +5,10 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add all source files
-add_executable(DogQuest src/main.cpp src/button.cpp)
+add_executable(DogQuest 
+        src/main.cpp 
+        src/button.cpp
+        src/Player.cpp)
 
 # Include paths
 target_include_directories(DogQuest PRIVATE

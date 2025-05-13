@@ -1,0 +1,57 @@
+{
+  "kennel_start": {
+    "sentence": "You are in a kennel and need to escape.",
+    "choices": [
+      { "text": "Bite your way out", "next": "bite_check" },
+      { "text": "Bark to get the owner's attention", "next": "bark_check" }
+    ]
+  },
+  "bite_check": {
+    "sentence": "You try to bite your way out.",
+    "skillCheck": {
+      "type": "bite",
+      "threshold": 4,
+      "success": {
+        "sentence": "You bit your way out and now you are free.",
+        "next": "freedom"
+      },
+      "failure": {
+        "sentence": "The owner sees you and he puts you down.",
+        "next": "put_down"
+      }
+    },
+    "choices": []
+  },
+  "bark_check": {
+    "sentence": "You bark to get the owner's attention.",
+    "skillCheck": {
+      "type": "bark",
+      "threshold": 3,
+      "success": {
+        "sentence": "He opens the kennel to give you food.",
+        "next": "food_opportunity"
+      },
+      "failure": {
+        "sentence": "The owner gets mad and puts a muzzle on you.",
+        "next": "muzzled"
+      }
+    },
+    "choices": []
+  },
+  "freedom": {
+    "sentence": "You're free! The world awaits.",
+    "choices": []
+  },
+  "put_down": {
+    "sentence": "Game over. You were put down.",
+    "choices": []
+  },
+  "food_opportunity": {
+    "sentence": "He opens the door — now's your chance to act.",
+    "choices": []
+  },
+  "muzzled": {
+    "sentence": "You are muzzled and can no longer bark.",
+    "choices": []
+  }
+}
