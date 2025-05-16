@@ -6,48 +6,6 @@ A pixel-art, story-driven SFML adventure game where you’re a dog trying to sur
 
 **DogQuest** is a C++/SFML-based interactive narrative game where your choices—and your skills—determine the story path. You begin locked in a kennel, and your journey unfolds through a branching story loaded from a JSON file, with choices, skill checks, and consequences.
 
-You play as **Rufus**, but eventually the player will be able to name and build their own dog through a character creation screen (WIP).
-
-## **📂 Project Structure**
-
-DogQuest/
-├── Assets/
-│   ├── Fonts/
-│   │   └── SilkscreenRegular.ttf
-│   ├── audio/
-│   │   └── DogQuestOST.mp3
-│   └── Images/
-│       ├── Intro/
-│       │   └── IntroScreen.png
-│       ├── PauseMenu/
-│       │   └── PauseMenuScreen.png
-│       └── StoryNodes/
-│           ├── DeathScreen.png
-│           ├── EndingScreen.png
-│           ├── Node1_Kennel.png
-│           ├── Node2_Convo.png
-│           ├── Node3_Bar.png
-│           ├── Node3_WinFight.png
-│           ├── Node4_Tsunami.png
-│           ├── Node5_DogGod.png
-│           └── Node6_DogEnding.png
-│
-├── build/                     # CMake build output
-├── data/
-│   └── story_graph.json       # The core branching story structure
-│
-├── headerFiles/
-│   ├── button.hpp
-│   └── Player.hpp
-│
-├── src/
-│   ├── main.cpp               # Main game loop
-│   ├── button.cpp             # Button rendering/logic
-│   └── Player.cpp             # Player state and skill system
-│
-├── CMakeLists.txt
-└── README.md                  # You are here
-
 ## **🧠 How It Works**
 
 ### **Story System**
