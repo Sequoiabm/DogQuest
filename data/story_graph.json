@@ -1,57 +1,161 @@
 {
-  "kennel_start": {
-    "sentence": "You are in a kennel and need to escape.",
+  "intro_menu": {
+    "sentence": "Welcome to Dog Quest!",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/Intro/IntroScreen.png",
     "choices": [
-      { "text": "Bite your way out", "next": "bite_check" },
-      { "text": "Bark to get the owner's attention", "next": "bark_check" }
+      { "text": "New Game", "next": "character_creation" },
+      { "text": "Load Game", "next": "load_game" }
     ]
   },
-  "bite_check": {
-    "sentence": "You try to bite your way out.",
-    "skillCheck": {
-      "type": "bite",
-      "threshold": 4,
-      "success": {
-        "sentence": "You bit your way out and now you are free.",
-        "next": "freedom"
+
+  "character_creation": {
+    "sentence": "Create your dog. Choose your name and assign skill points.",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/Intro/CharacterCreationScreen.png",
+    "choices": [
+      { "text": "Complete Character", "next": "kennel_start" },
+      { "text": "Back to Main Menu", "next": "intro_menu" }
+    ]
+  },
+
+  "pause_menu": {
+    "sentence": "Game Paused.",
+    "image": "Assets/Images/PauseMenu/PauseMenuScreen.png",
+    "choices": [
+      { "text": "Resume", "next": "resume_game" },
+      { "text": "Save Game", "next": "save_game" },
+      { "text": "Load Game", "next": "load_game" },
+      { "text": "Exit to Main Menu", "next": "intro_menu" }
+    ]
+  },
+
+  "save_game": {
+    "sentence": "Game Saved Successfully.",
+    "image": "Assets/Images/PauseMenu/PauseMenuScreen.png",
+    "choices": [
+      { "text": "Back", "next": "pause_menu" }
+    ]
+  },
+
+  "load_game": {
+    "sentence": "Load Game Placeholder.",
+    "image": "Assets/Images/PauseMenu/PauseMenuScreen.png",
+    "choices": [
+      { "text": "Back", "next": "pause_menu" }
+    ]
+  },
+
+  "resume_game": {
+    "sentence": "(Resuming...)",
+    "image": "Assets/Images/PauseMenu/PauseMenuScreen.png",
+    "choices": []
+  },
+
+  "kennel_start": {
+    "sentence": "You are in a kennel. Trapped.",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/StoryNodes/Node1_Kennel.png",
+    "choices": [
+      {
+        "text": "Bite out",
+        "next": "dog_encounter_bite",
+        "requirement": { "stat": "bite", "value": 4 },
+        "failText": "You try to bite the bars... but your teeth aren't strong enough."
       },
-      "failure": {
-        "sentence": "The owner sees you and he puts you down.",
-        "next": "put_down"
+      {
+        "text": "Bark for help",
+        "next": "dog_encounter_bark",
+        "requirement": { "stat": "bark", "value": 3 },
+        "failText": "You bark as loud as you can... but no one hears you."
       }
-    },
-    "choices": []
+    ]
   },
-  "bark_check": {
-    "sentence": "You bark to get the owner's attention.",
-    "skillCheck": {
-      "type": "bark",
-      "threshold": 3,
-      "success": {
-        "sentence": "He opens the kennel to give you food.",
-        "next": "food_opportunity"
+
+  "dog_encounter_bite": {
+    "sentence": "A dog pulls up and notices you bit your way out.",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/StoryNodes/Node2_Convo.png",
+    "choices": [
+      { "text": "Fight", "next": "death" },
+      { "text": "Befriend", "next": "bar_intro" }
+    ]
+  },
+
+  "dog_encounter_bark": {
+    "sentence": "A dog pulls up and helps you out.",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/StoryNodes/Node2_Convo.png",
+    "choices": [
+      { "text": "Fight", "next": "death" },
+      { "text": "Befriend", "next": "bar_intro" }
+    ]
+  },
+
+  "bar_intro": {
+    "sentence": "You go to the Ruffhouse Bar. The dogs are staring you down.",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/StoryNodes/Node3_Bar.png",
+    "choices": [
+      {
+        "text": "Fight them",
+        "next": "respect_path_fight",
+        "requirement": { "stat": "bite", "value": 5 },
+        "failText": "You lunge at the lead dog... but you're overpowered. You die."
       },
-      "failure": {
-        "sentence": "The owner gets mad and puts a muzzle on you.",
-        "next": "muzzled"
+      {
+        "text": "Bark to intimidate",
+        "next": "respect_path_bark",
+        "requirement": { "stat": "bark", "value": 5 },
+        "failText": "You bark... but they just laugh. You die."
       }
-    },
+    ]
+  },
+
+  "respect_path_fight": {
+    "sentence": "You beat him up. He respects you. He offers you a cigarette.",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/StoryNodes/Node3_WinFight.png",
+    "choices": [
+      { "text": "Share cigarette", "next": "tsunami_warning" }
+    ]
+  },
+
+  "respect_path_bark": {
+    "sentence": "You scare him. He respects you. He offers you a cigarette.",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/StoryNodes/Node3_WinFight.png",
+    "choices": [
+      { "text": "Share cigarette", "next": "tsunami_warning" }
+    ]
+  },
+
+  "tsunami_warning": {
+    "sentence": "Suddenly, a tsunami comes out of nowhere!",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/StoryNodes/Node4_Tsunami.png",
+    "choices": [
+      { "text": "Pray", "next": "dog_god" },
+      { "text": "Run in the bar", "next": "dog_ending" }
+    ]
+  },
+
+  "dog_god": {
+    "sentence": "Dog god comes down and saves everyone.",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/StoryNodes/Node5_DogGod.png",
+    "choices": [
+      { "text": "Finish the game", "next": "ending" }
+    ]
+  },
+
+  "dog_ending": {
+    "sentence": "The tsunami destroys the bar. You wake up in a daze. The sun is out. Now it's up to you to find your way in this new world.",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/StoryNodes/Node6_DogEnding.png",
+    "choices": [
+      { "text": "Finish the game", "next": "ending" }
+    ]
+  },
+
+  "death": {
+    "sentence": "You die.",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/StoryNodes/DeathScreen.png",
     "choices": []
   },
-  "freedom": {
-    "sentence": "You're free! The world awaits.",
-    "choices": []
-  },
-  "put_down": {
-    "sentence": "Game over. You were put down.",
-    "choices": []
-  },
-  "food_opportunity": {
-    "sentence": "He opens the door — now's your chance to act.",
-    "choices": []
-  },
-  "muzzled": {
-    "sentence": "You are muzzled and can no longer bark.",
+
+  "ending": {
+    "sentence": "Thank you for playing Dog Quest.",
+    "image": "/Users/sequoiaboubionmckay/Desktop/DogQuest/Assets/Images/StoryNodes/EndingScreen.png",
     "choices": []
   }
 }
